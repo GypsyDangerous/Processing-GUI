@@ -21,7 +21,7 @@ The check box has a boolean variable "checked"
 The slider is constructed with a start value, end value, beginning value, position, and increment size.  
 The slider has a second constructor that does the same as the first but has a default increment size of 1.  
 The slider has a function to show it as a line for the rail and cirlce for the handle.  
-the slider has a function that allows you slide it with the mouse.  
-the slider has run function that does the last two at once.  
+The slider has a function that allows you slide it with the mouse.  
+The slider has run function that does the last two at once.  
 The slider has a functin that returns a value based on the position of the handle.  
 
