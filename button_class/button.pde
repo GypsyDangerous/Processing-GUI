@@ -31,7 +31,7 @@ class button
     text = t;
   }
 
-  void show()
+  boolean pressed()
   {
     fill(fill);
     rectMode(CENTER);
@@ -42,10 +42,7 @@ class button
     textSize(w/5);
     textAlign(CENTER, CENTER);
     text(text, pos.x, pos.y);
-  }
-
-  boolean pressed()
-  {
+    
     if (mouseX > pos.x-w/2 && mouseX < pos.x+w/2 && mouseY > pos.y-h/2 && mouseY < pos.y+h/2 && mousePressed)
     {
       if (!pressed)
@@ -84,7 +81,7 @@ class circlebutton extends button
     text = t;
   }
 
-  void show()
+  boolean pressed()
   {
     fill(fill);
     noStroke();
@@ -93,10 +90,6 @@ class circlebutton extends button
     textSize(d/5);
     textAlign(CENTER, CENTER);
     text(text, pos.x, pos.y);
-  }
-
-  boolean pressed()
-  {
     if (dist(pos.x, pos.y, mouseX, mouseY) < d/2 && mousePressed)
     {
       if (!pressed)
